@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    
+
+       body {
+         background: #fff5f7;
+         color: #5a4a4a;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: "Poppins", sans-serif;
+       }
+
+       header h1 {
+        color: #c27a8a;
+        font-weight: 600;
+        font-size: 32px;
+      }
+
+       /* NAVBAR */
+       header {
+         background: #f8d7da;
+         display: flex;
+         justify-content: space-between;
+         padding: 15px 40px;
+         align-items: center;
+         position: sticky;
+         top: 0;
+       }
+
+       .logo {
+         font-weight: 600;
+         font-size: 20px;
+         color: #c27a8a;
+       }
+
+       nav a {
+         margin-left: 20px;
+         text-decoration: none;
+         color: #a85d6a;
+         font-weight: 500;
+       }
+
+       /* HERO */
+       .hero {
+         text-align: center;
+         padding: 80px 20px;
+         background: linear-gradient(to right, #ffe4e9, #fff);
+       }
+
+       .hero h1 {
+         font-size: 32px;
+         color: #c27a8a;
+       }
+
+       .hero p {
+         margin: 10px 0;
+       }
+
+       .btn {
+         padding: 12px 25px;
+         border: none;
+         background: #e8a1b1;
+         color: white;
+         border-radius: 25px;
+         cursor: pointer;
+       }
+
+       /* SECTION */
+       section {
+         padding: 60px 20px;
+         text-align: center;
+       }
+
+       h2 {
+         color: #c27a8a;
+         margin-bottom: 20px;
+       }
+
+       /* PRODUK */
+       .grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+         gap: 20px;
+       }
+
+       .card {
+         background: white;
+         padding: 15px;
+         border-radius: 15px;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+         transition: 0.3s;
+       }
+
+       .card:hover {
+         transform: translateY(-5px);
+       }
+
+       .card img {
+         width: 100%;
+         border-radius: 10px;
+       }
+
+       /* ABOUT */
+       .about {
+         max-width: 700px;
+         margin: auto;
+       }
+
+       /* CONTACT */
+       form {
+         max-width: 500px;
+         margin: auto;
+         display: flex;
+         flex-direction: column;
+       }
+
+       input,
+       textarea {
+         margin: 10px 0;
+         padding: 10px;
+         border-radius: 10px;
+         border: 1px solid #ddd;
+       }
+
+       /* FOOTER */
+       footer {
+         background: #f8d7da;
+         text-align: center;
+         padding: 20px;
+         margin-top: 40px;
+       }
+  </style>
+
+   <!-- Header -->
+    <header>
+      <h1>Denma Hijab Beauty</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </header>
+
+
+
+<!-- KONTAK -->
+    <section id="kontak">
+      <h2>Kontak Kami</h2>
+
+      <form onsubmit="kirimPesan(event)">
+        <input type="text" placeholder="Nama" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Pesan"></textarea>
+        <button class="btn">Kirim</button>
+      </form>
+    </section>
+
+      </body>
+</html>
